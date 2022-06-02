@@ -49,11 +49,34 @@ if(array_key_exists("Logout", $_GET)){
     }
   }
 ?>
-<div id="error"><?php echo $error; ?></div>
-    <form method="post">
-        <input type="email" name="email" placeholder="Your Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="checkbox" name="stayLoggedIn" value=1>
-        <input type="submit" name="submit" value="Sign Up!">
-    </form>
+
+
+<div id="error"></div>
+
+<form method="post">
+
+    <input type="email" name="email" placeholder="Your Email">
     
+    <input type="password" name="password" placeholder="Password">
+    
+    <input type="checkbox" name="stayLoggedIn" value=1>
+    
+    <input type="hidden" name="signUp" value="1">
+        
+    <input type="submit" name="submit" value="Sign Up!">
+
+</form>
+
+<form method="post">
+
+    <input type="email" name="email" placeholder="Your Email">
+    
+    <input type="password" name="password" placeholder="Password">
+    
+    <input type="checkbox" name="stayLoggedIn" value=1>
+    
+    <input type="hidden" name="signUp" value="0">
+        
+    <input type="submit" name="submit" value="Log In!">
+
+</form>
